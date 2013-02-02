@@ -1,0 +1,83 @@
+<div class="rightbox clearfix">
+			<div class="logo">
+			<ul>
+				<li><a href="/">&nbsp;</a></li>
+				<li>{dede:type typeid="26"}<a href="[field:typelink/]">{/dede:type}&nbsp;</a></li>
+			</ul>
+			</div>
+			<div class="menu">
+				<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.8.3.min.js"></script>
+				<script type="text/javascript">
+				$(document).ready(function(){
+					var tg = $(".tg");
+					var tg_hidden = $(".tg_hidden");
+					tg.each(function(index){
+						tg.eq(index).click(function(){
+							tg_hidden.eq(index).slideToggle("8000");
+						});
+					});
+				});
+				</script>
+				<ul>
+					<li class="m1"><a href="/">&nbsp;</a></li>
+					<li class="m2">{dede:type typeid="1"}<a href="[field:typelink/]">{/dede:type}&nbsp;</a></li>
+					<li class="m3 tg">
+					{dede:type typeid="2"}<a href="#">{/dede:type}&nbsp;</a>
+					{dede:field name="reid" runphp="yes"}
+					if(@me=='2')
+					{
+						@me = '<dl>';
+					}
+					else
+					{
+						@me = '<dl class="tg_hidden">';
+					}
+					{/dede:field}
+						{dede:channel typeid='2' type='son'}
+						<dd><a href="[field:typelink/]">[field:typename/]</a></dd>
+						{/dede:channel}
+					</dl>
+					</li>
+					<li class="m4">{dede:type typeid="3"}<a href="[field:typelink/]">{/dede:type}&nbsp;</a></li>
+					<li class="m8 tg">
+					{dede:type typeid="18"}<a href="#">{/dede:type}&nbsp;</a>
+					{dede:field name="reid" runphp="yes"}
+					if(@me=='18')
+					{
+						@me = '<dl>';
+					}
+					else
+					{
+						@me = '<dl class="tg_hidden">';
+					}
+					{/dede:field}
+						{dede:channel typeid='18' type='son'}
+						<dd><a href="[field:typelink/]">[field:typename/]</a></dd>
+						{/dede:channel}
+					</dl>
+					</li>
+					<li class="m5">{dede:type typeid="10"}<a href="[field:typelink/]">{/dede:type}&nbsp;</a></li>
+					<li class="m6">{dede:type typeid="11"}<a href="[field:typelink/]">{/dede:type}&nbsp;</a></li>
+					<li class="m7">{dede:type typeid="12"}<a href="[field:typelink/]">{/dede:type}&nbsp;</a></li>
+				</ul>
+			</div>
+			<div class="rec_product">
+				{dede:arclist  flag='a' typeid='2' row='1'}
+				<a href="[field:typelink/]"><img src="[field:litpic/]" alt="" /></a>
+				{/dede:arclist}
+			</div>
+			<div class="sidemenu">
+				<ul>
+					<li>{dede:type typeid="27"}<a href="[field:typelink/]"><img src="[field:global.cfg_templets_skin/]/images/bg_logo.jpg" alt="" /></a>{/dede:type}</li>
+					<li>{dede:type typeid="26"}<a href="[field:typelink/]"><img src="[field:global.cfg_templets_skin/]/images/bg_contact.jpg" alt="" /></a>{/dede:type}</li>
+				</ul>
+			</div>
+			<div class="sidenews">
+				<h3><span class="tname"></span><span class="tmore">{dede:type typeid="18"}<a href="[field:typelink/]">{/dede:type}&nbsp;</a></span></h3>
+				<ul>
+					{dede:arclist typeid="18" row="10" orderby="pubdate"}
+					<li><a href="[field:arcurl/]">[field:title/]</a><span class="date">[field:pubdate function="GetDateMK(@me)"/]</span></li>
+					{/dede:arclist}
+				</ul>
+			</div>
+		</div>

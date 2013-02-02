@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=7" />
+	<title>{dede:global.cfg_webname/}-首页</title>
+	<meta name="description" content="{dede:global.cfg_description/}" />
+	<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/main.css" />
+</head>
+{dede:include filename='header.htm'/}
+			<div class="category col">
+				<h3>产品分类：</h3>
+				<ul class="catul">
+					{dede:channel typeid="2" type="son"}
+					<li><a href="[field:typelink/]">[field:typename/]</a></li>
+					{/dede:channel}
+				</ul>
+				<span class="o1"></span>
+				<span class="o2"></span>
+				<span class="o3"></span>
+				<span class="o4"></span>
+			</div>
+			<div class="plist">
+				<ul>
+					{dede:arclist typeid="2" row="6" addfields='price' channelid='17'}
+					[field:global name='autoindex' runphp='yes']
+					if(@me%3=='0')
+					{
+						@me = '<li class="right">';
+					}
+					else
+					{
+						@me = '<li>';
+					}
+					[/field:global]
+						<p class="p_img">
+							<a href="[field:arcurl/]"><img src="[field:litpic/]" alt="" /></a>
+						</p>
+						<p class="p_title"><a href="[field:arcurl/]">[field:title/]</a></p>
+						<p class="p_price">
+						产品价格：<em>￥[field:price/]</em>
+						</p>
+						<p class="p_buy">
+						<a href="[field:arcurl/]">
+							在线订购
+						</a>
+						</p>
+					</li>
+					{/dede:arclist}
+				</ul>
+			</div>
+		</div>
+		{dede:include filename="right.htm"/}
+{dede:include filename="footer_index.htm"/}	

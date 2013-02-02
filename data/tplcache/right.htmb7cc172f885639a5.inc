@@ -1,0 +1,47 @@
+<?php
+$z[0]=Array("type","<a href=\"[field:typelink/]\">",110,173);
+$z[0][4]['typeid']="26";
+$z[1]=Array("global","",274,306);
+$z[1][4]['name']="cfg_templets_skin";
+$z[2]=Array("type","<a href=\"[field:typelink/]\">",720,782);
+$z[2][4]['typeid']="1";
+$z[3]=Array("type","<a href=\"#\">",829,875);
+$z[3][4]['typeid']="2";
+$z[4]=Array("field","\r\n					if(@me=='2')\r\n					{\r\n						@me = '<dl>';\r\n					}\r\n					else\r\n					{\r\n						@me = '<dl class=\"tg_hidden\">';\r\n					}\r\n					",892,1071);
+$z[4][4]['name']="reid";
+$z[4][4]['runphp']="yes";
+$z[5]=Array("channel","\r\n						<dd><a href=\"[field:typelink/]\">[field:typename/]</a></dd>\r\n						",1079,1204);
+$z[5][4]['typeid']="2";
+$z[5][4]['type']="son";
+$z[6]=Array("type","<a href=\"[field:typelink/]\">",1250,1312);
+$z[6][4]['typeid']="3";
+$z[7]=Array("type","<a href=\"#\">",1359,1406);
+$z[7][4]['typeid']="18";
+$z[8]=Array("field","\r\n					if(@me=='18')\r\n					{\r\n						@me = '<dl>';\r\n					}\r\n					else\r\n					{\r\n						@me = '<dl class=\"tg_hidden\">';\r\n					}\r\n					",1423,1603);
+$z[8][4]['name']="reid";
+$z[8][4]['runphp']="yes";
+$z[9]=Array("channel","\r\n						<dd><a href=\"[field:typelink/]\">[field:typename/]</a></dd>\r\n						",1611,1737);
+$z[9][4]['typeid']="18";
+$z[9][4]['type']="son";
+$z[10]=Array("type","<a href=\"[field:typelink/]\">",1783,1846);
+$z[10][4]['typeid']="10";
+$z[11]=Array("type","<a href=\"[field:typelink/]\">",1883,1946);
+$z[11][4]['typeid']="11";
+$z[12]=Array("type","<a href=\"[field:typelink/]\">",1983,2046);
+$z[12][4]['typeid']="12";
+$z[13]=Array("arclist","\r\n				<a href=\"[field:typelink/]\"><img src=\"[field:litpic/]\" alt=\"\" /></a>\r\n				",2119,2257);
+$z[13][4]['flag']="a";
+$z[13][4]['typeid']="2";
+$z[13][4]['row']="1";
+$z[14]=Array("type","<a href=\"[field:typelink/]\"><img src=\"[field:global.cfg_templets_skin/]/images/bg_logo.jpg\" alt=\"\" /></a>",2316,2456);
+$z[14][4]['typeid']="27";
+$z[15]=Array("type","<a href=\"[field:typelink/]\"><img src=\"[field:global.cfg_templets_skin/]/images/bg_contact.jpg\" alt=\"\" /></a>",2472,2615);
+$z[15][4]['typeid']="26";
+$z[16]=Array("type","<a href=\"[field:typelink/]\">",2726,2789);
+$z[16][4]['typeid']="18";
+$z[17]=Array("arclist","\r\n					<li><a href=\"[field:arcurl/]\">[field:title/]</a><span class=\"date\">[field:pubdate function=\"GetDateMK(@me)\"/]</span></li>\r\n					",2828,3031);
+$z[17][4]['typeid']="18";
+$z[17][4]['row']="10";
+$z[17][4]['orderby']="pubdate";
+
+?>

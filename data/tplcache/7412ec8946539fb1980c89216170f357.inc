@@ -1,0 +1,1 @@
+<a href="#"><img src="{dede:global.cfg_templets_skin/}/images/img_product_default.jpg" alt="" /></a>
